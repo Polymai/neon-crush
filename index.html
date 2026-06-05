@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Crush | Arcade Match-3 Puzzle Game</title>
+    <meta
+      name="description"
+      content="Neon Crush is a fast browser match-3 puzzle game with neon tiles, daily rewards, boosters, achievements, and score leaderboards."
+    />
+    <meta name="theme-color" content="#080b1f" />
+    <meta property="og:title" content="Neon Crush" />
+    <meta
+      property="og:description"
+      content="Play a neon arcade match-3 puzzle game with boosters, rewards, achievements, and leaderboards."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preload" as="image" href="assets/hero-neon-crush.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="data/supabaseConfig.js"></script>
+    <script src="data/stripeConfig.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Neon Crush",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web browser",
+        "description": "A browser match-3 puzzle game with neon tiles, daily rewards, boosters, achievements, and score leaderboards.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <main class="static-shell">
+        <section class="static-hero">
+          <p class="eyebrow">Arcade match-3</p>
+          <h1>Neon Crush</h1>
+          <p>
+            Swap glowing tiles, chase level goals, unlock daily rewards, and climb the leaderboard in a fast neon puzzle run.
+          </p>
+          <div class="static-actions">
+            <a class="button button-primary" href="#play">Start run</a>
+            <a class="button button-secondary" href="#leaderboard">View board</a>
+          </div>
+        </section>
+        <section class="static-preview" aria-label="Game preview">
+          <div class="preview-grid" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="build/neon-crush-app.js"></script>
+  </body>
+</html>
